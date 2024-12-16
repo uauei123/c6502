@@ -28,7 +28,7 @@ int cpu_init(CPU *cpu) {
 
 uint8_t fetch(CPU *cpu)
 {
-	printf("read: 0x%04X, A: 0x%02X, cycles %d\n", cpu->pc, cpu->A_reg, cycles);
+    printf("read: 0x%04X, A: 0x%02X, cycles %ld\n", cpu->pc, cpu->A_reg, cycles);
     return read(cpu, cpu->pc++);
 }
 

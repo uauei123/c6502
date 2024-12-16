@@ -78,7 +78,7 @@ int main(int argc, char **argv)
 		printf("\n\n");
 
 		printf("PC: 0x%04X\tSP: 0x%02X\n", cpu.pc, cpu.sp);
-		printf("A: 0x%02X\tX: 0x%02XtY: 0x%02X\n", cpu.A_reg, cpu.X_reg, cpu.Y_reg);
+		printf("A: 0x%02X\tX: 0x%02X\tY: 0x%02X\n", cpu.A_reg, cpu.X_reg, cpu.Y_reg);
 		printf("Status: ");
 
 		for(int i = 0; i < 7; i++)

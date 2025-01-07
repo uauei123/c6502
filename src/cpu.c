@@ -117,7 +117,7 @@ uint8_t get_hi(uint16_t value)
 int execute(CPU *cpu, uint8_t opcode)
 {
 	printf("opcode: 0x%02X, pc: 0x%04X\n", opcode, cpu->pc - 1);
-	scanf(" %c");
+	getchar();
 	opcodes[opcode].ptr(cpu, opcodes[opcode].adm);
 	cycles += opcodes[opcode].cycles;
 	return 0;

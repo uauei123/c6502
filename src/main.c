@@ -73,6 +73,8 @@ int main(int argc, char **argv)
 			{
 				printf("%02X ", MEMORY[row * 16 + col]);
 			}
+
+			printf("\n");
 		}
 
 		printf("\n\n");
